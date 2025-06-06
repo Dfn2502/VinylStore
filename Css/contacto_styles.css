@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+    overflow-y: hidden;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.08fr 0.4fr 2fr;
+    grid-template-areas: 
+    "head"
+    "parallax"
+    "section";
+    height: 100dvh;
+}
+header{
+    background-color:#302C2C;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1;
+    width: 100%;
+    height: auto;
+    grid-area: head;
+    grid-template-areas: 
+    "logo nav";
+    box-sizing: border-box;
+    top: 0;
+    z-index: 2;
+}
+.logo{
+    grid-area: "logo";
+    width: 48%;
+    justify-self: center;
+    align-self: center;
+}
+.logo img{
+    width: 60%;
+    margin-top: auto;
+    align-self: center;
+}
+nav{
+    grid-area: nav;
+    width: 80%;
+    justify-self: end;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1;
+    grid-template-areas: "1 1 1";
+}
+nav ul li{
+    grid-area: "1";
+    background-color: rgb(13, 12, 12);
+    width: 80%;
+    height: 60%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "Jockey One", serif;
+    color: white;
+    width: 100%;
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 9vh;
+    font-size: 150%;
+
+}
+nav ul li:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+.menu_desplegable{
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    padding: 0;
+}
+.menu_desplegable li a {
+    color: white;
+    width: 100%;
+    height: auto;
+    background: #141212;
+    font-size: 100%;
+}
+
+.menu_desplegable li a:hover {
+    background: #f1f1f1;
+    color: black;
+}
+
+nav ul li:hover .menu_desplegable {
+    display: block;
+}
+.parallax{
+    width: 100%;
+    background-image: url(../Recursos/fondo_parallax.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    grid-area: parallax;
+    overflow: hidden;
+    position: relative;
+}
+.parallax h1{
+    font-size: 490%;
+    color: white;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Jockey One", serif;
+}
+.principal{
+    background-color: #302C2C;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "form redes";
+}
+.formulario{
+    grid-area: form;;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 2fr 0.2fr;
+    grid-template-areas: 
+    "nombre"
+    "nombrei"
+    "correo"
+    "correoi"
+    "mensaje"
+    "mensajei"
+    "guarda";
+    border-right: 2px solid white;
+}
+.formulario label{
+    font-family: "Jockey One", serif;
+    color: white;
+    font-size: 130%;
+    margin-left: 5%;
+
+}
+.formulario label:nth-child(1){
+    margin-top: 2%;
+}
+.formulario input{
+    margin-left: 5%;
+    width: 80%;
+}
+#nombre{
+    grid-area: nombre;
+}
+#nombre-input{
+    grid-area: nombrei;
+}
+#correo{
+    grid-area: correo;
+}
+#correo-input{
+    grid-area: correoi;
+}
+#mensaje{
+    grid-area: mensaje;
+}
+#mensaje-input{
+    grid-area: mensajei;
+    margin-left: 5%;
+    width: 78.5%;
+    padding: 4px;
+}
+.guardar{
+    grid-area: guarda;
+    background-color: black;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.redes{
+    grid-area: redes;
+    color: white;
+    display: grid;
+    grid-template-rows:  0.4fr 0.3fr 0.3fr 2fr;
+    width: 100%;
+    height: 90%;
+    grid-template-areas:
+    "." 
+    "correotienda"
+    "telefono"
+    "social";
+}
+.correo{
+    grid-area: correotienda;
+    font-family: "Jockey One", serif;
+    margin-left: 5%;
+    font-size: 300%;
+}
+.telefono{
+    grid-area: telefono;
+    font-family: "Jockey One", serif;
+    margin-left: 5%;
+    font-size: 250%;
+}
+.redes_sociales{
+    grid-area: social;
+    border-left: 2px solid white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: .1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    "face ig twitter";
+}
+.redes_sociales div:nth-child(1){
+    margin-left: 15%;
+}
+.redes_sociales div{
+    background-color: aliceblue;
+    width: 40%;
+    text-align: center;
+    height: 30%;
+    border-radius: 30%;
+}
+.redes_sociales a, .redes_sociales i{
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+    line-height: 120%;
+    color: black;
+    transition: 0.2s;
+    border-radius: 30%;
+}
+.redes_sociales i:hover{
+    background-color: black;
+    color: white;
+}
+#facebook{
+    grid-area: face;
+}
+#instagram{
+    grid-area: ig;
+}
+#twitter{
+    grid-area: twitter;
+}

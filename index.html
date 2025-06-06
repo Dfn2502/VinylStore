@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinylStore</title>
+    <link rel="stylesheet" href="Css/styles.css">
+
+    <!--Fuente Jockey One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="Recursos/icono_pagina.png">
+
+<!--Font-awesome-->
+<link rel="stylesheet" href="Css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    
+</head>
+<body>
+    <main>
+    <header>
+    <figure class="logo"><a href="index.html"><img src="Recursos/logo.png" alt=""></a></figure>
+    <nav>
+        <ul>
+            <li><a href="index.html">Categorias</a>
+                <ul class="menu_desplegable">
+                    <li><a href="#latina">Música Latina</a></li>
+                    <li><a href="#rock">Rock</a></li>
+                    <li><a href="#pop">Pop</a></li>
+                    <li><a href="#soundtrack">Soundtrack</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+    <figure class="parallax">
+        <h1 class="titulo" id="titulo">VinylStore</h1>
+        <img src="Recursos/portada_disco.png" alt="" class="portada" >
+        <img src="Recursos/Vinilo.png" alt="" id="disco" class="disco">
+    </figure>
+    <section class="principal">
+        <section class="seccion1">
+            <h1 id="latina" class="t1">Musica Latina</h1>
+            <hr>
+            <section class="contenedor">
+                <div class="discon" id="d1" onmouseover="expansion('d1')" onmouseout="reduccion('d1')">
+                    <img class="imgdisco" src="Recursos/20años.jpg" alt="">
+                    <div class="info">
+                        <h2>20 Años - Luis Miguel</h2>
+                        <button onclick="play('sera', 'd1')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/sera_que.mp3" id="sera"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d2" onmouseover="expansion('d2')" onmouseout="reduccion('d2')">
+                    <img class="imgdisco" src="Recursos/romance.jpg" alt="">
+                    <div class="info">
+                        <h2>Romance - Luis Miguel</h2>
+                        <button onclick="play('mucho', 'd2')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/mucho_corazon.mp3" id="mucho"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d3" onmouseover="expansion('d3')" onmouseout="reduccion('d3')">
+                    <img class="imgdisco" src="Recursos/juangabriel.jpg" alt="">
+                    <div class="info">
+                        <h2>Bellas Artes - Juan Gabriel</h2>
+                        <button onclick="play('amorEterno', 'd3')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/amor_eterno.mp3" id="amorEterno"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d4" onmouseover="expansion('d4')" onmouseout="reduccion('d4')">
+                    <img class="imgdisco" src="Recursos/reencuentro.jpg" alt="">
+                    <div class="info">
+                        <h2>Reencuentro - Jose Jose</h2>
+                        <button onclick="play('gavilan', 'd4')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/gavilan_o_paloma.mp3" id="gavilan"></audio>
+                        <h3>900$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d5" onmouseover="expansion('d5')" onmouseout="reduccion('d5')">
+                    <img class="imgdisco" src="Recursos/romantico.jpg" alt="">
+                    <div class="info">
+                        <h2>Romantico - Jose Jose</h2>
+                        <button onclick="play('gloria', 'd5')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/gloria_tu.mp3" id="gloria"></audio>
+                        <h3>900$</h3>
+                    </div>
+                </div>
+
+
+                <div class="discon" id="d6" onmouseover="expansion('d6')" onmouseout="reduccion('d6')">
+                    <img class="imgdisco" src="Recursos/Mas.jpg" alt="">
+                    <div class="info">
+                        <h2>Mas - Alejandro Sanz</h2>
+                        <button onclick="play('corazon', 'd6')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/corazon_partio.mp3" id="corazon"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d7" onmouseover="expansion('d7')" onmouseout="reduccion('d7')">
+                    <img class="imgdisco" src="Recursos/si.jpg" alt="">
+                    <div class="info">
+                        <h2>Si - Julieta Venegas</h2>
+                        <button onclick="play('lento', 'd7')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/lento.mp3" id="lento"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d8" onmouseover="expansion('d8')" onmouseout="reduccion('d8')">
+                    <img class="imgdisco" src="Recursos/Trozos.jpg" alt="">
+                    <div class="info">
+                        <h2>Trozos de mi alma - Marco Antonio</h2>
+                        <button onclick="play('trozos', 'd8')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/sinotehubierasido.mp3" id="trozos"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+                
+            </section>
+        </section>
+        <section class="seccion2">
+            <h1 id="rock" class="t2">Rock</h1>
+            <hr>
+            <section class="contenedor">
+                <div class="discon" id="d9" onmouseover="expansion('d9')" onmouseout="reduccion('d9')">
+                    <img class="imgdisco" src="Recursos/back_in_black.jpg" alt="">
+                    <div class="info">
+                        <h2>Back in Black - AC/DC</h2>
+                        <button onclick="play('acdc', 'd9')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/hells_bells.mp3" id="acdc"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d10" onmouseover="expansion('d10')" onmouseout="reduccion('d10')">
+                    <img class="imgdisco" src="Recursos/hotel_california.jpg" alt="">
+                    <div class="info">
+                        <h2>Hotel California - Eagles</h2>
+                        <button onclick="play('eagles', 'd10')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/kid_in_town.mp3" id="eagles"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d11" onmouseover="expansion('d11')" onmouseout="reduccion('d11')">
+                    <img class="imgdisco" src="Recursos/roundabout.jpg" alt="">
+                    <div class="info">
+                        <h2>Roundabout - Yes</h2>
+                        <button onclick="play('roundabout', 'd11')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/roundabout.mp3" id="roundabout"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d12" onmouseover="expansion('d12')" onmouseout="reduccion('d12')">
+                    <img class="imgdisco" src="Recursos/hypnotize.jpg" alt="">
+                    <div class="info">
+                        <h2>Hypnotize - System of a Down</h2>
+                        <button onclick="play('lonely', 'd12')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/lonely_day.mp3" id="lonely"></audio>
+                        <h3>1250$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d13" onmouseover="expansion('d13')" onmouseout="reduccion('d13')">
+                    <img class="imgdisco" src="Recursos/use_your_illusion.jpg" alt="">
+                    <div class="info">
+                        <h2>Use you Illusion 1 - Guns N´ Roses</h2>
+                        <button onclick="play('november', 'd13')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/november_rain.mp3" id="november"></audio>
+                        <h3>900$</h3>
+                    </div>
+                </div>
+
+
+                <div class="discon" id="d14" onmouseover="expansion('d14')" onmouseout="reduccion('d14')">
+                    <img class="imgdisco" src="Recursos/appetite.jpg" alt="">
+                    <div class="info">
+                        <h2>Apetite for Destruction - Guns N´ Roses</h2>
+                        <button onclick="play('sweet', 'd14')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/child_o_mine.mp3" id="sweet"></audio>
+                        <h3>960$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d15" onmouseover="expansion('d15')" onmouseout="reduccion('d15')">
+                    <img class="imgdisco" src="Recursos/nightmare.jpg" alt="">
+                    <div class="info">
+                        <h2>Nightmare - Avenged Sevenfold</h2>
+                        <button onclick="play('nightmare', 'd15')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/nightmare.mp3" id="nightmare"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d16" onmouseover="expansion('d16')" onmouseout="reduccion('d16')">
+                    <img class="imgdisco" src="Recursos/hail.jpg" alt="">
+                    <div class="info">
+                        <h2>Hail to the King - Avenged Sevenfold </h2>
+                        <button onclick="play('war', 'd16')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/this_means_war.mp3" id="war"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="seccion3">
+            <h1 id="pop" class="t1">Pop</h1>
+            <hr>
+            <section class="contenedor">
+                <div class="discon" id="d17" onmouseover="expansion('d17')" onmouseout="reduccion('d17')">
+                    <img class="imgdisco" src="Recursos/future_nostalgia.jpg" alt="">
+                    <div class="info">
+                        <h2>Future Nostalgia - Dua Lipa</h2>
+                        <button onclick="play('levitating', 'd17')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/levitating.mp3" id="levitating"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d18" onmouseover="expansion('d18')" onmouseout="reduccion('d18')">
+                    <img class="imgdisco" src="Recursos/after_hours.jpg" alt="">
+                    <div class="info">
+                        <h2>After Hours - The Weekend</h2>
+                        <button onclick="play('after_hours', 'd18')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/save_your_tears.mp3" id="after_hours"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d19" onmouseover="expansion('d19')" onmouseout="reduccion('d19')">
+                    <img class="imgdisco" src="Recursos/goodbye.jpg" alt="">
+                    <div class="info">
+                        <h2>Goodbye Yellow Brick - Elton John</h2>
+                        <button onclick="play('brick', 'd19')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/yellow_brick.mp3" id="brick"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d20" onmouseover="expansion('d20')" onmouseout="reduccion('d20')">
+                    <img class="imgdisco" src="Recursos/thriller.jpg" alt="">
+                    <div class="info">
+                        <h2>Thriller - Michael Jackson</h2>
+                        <button onclick="play('thriller', 'd20')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/thriller.mp3" id="thriller"></audio>
+                        <h3>1250$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d21" onmouseover="expansion('d21')" onmouseout="reduccion('d21')">
+                    <img class="imgdisco" src="Recursos/celebration.jpg" alt="">
+                    <div class="info">
+                        <h2>Celebration - Madonna</h2>
+                        <button onclick="play('like', 'd21')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/like_a_prayer.mp3" id="like"></audio>
+                        <h3>900$</h3>
+                    </div>
+                </div>
+
+
+                <div class="discon" id="d22" onmouseover="expansion('d22')" onmouseout="reduccion('d22')">
+                    <img class="imgdisco" src="Recursos/make_it_big.jpg" alt="">
+                    <div class="info">
+                        <h2>Make It Big - Wham</h2>
+                        <button onclick="play('careless', 'd22')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/careless_whisper.mp3" id="careless"></audio>
+                        <h3>960$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d23" onmouseover="expansion('d23')" onmouseout="reduccion('d23')">
+                    <img class="imgdisco" src="Recursos/devuelveme_el_amor.jpg" alt="">
+                    <div class="info">
+                        <h2>Devuelveme a mi chica - Hombres G</h2>
+                        <button onclick="play('devuelve', 'd23')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/devuelveme.mp3" id="devuelve"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d24" onmouseover="expansion('d24')" onmouseout="reduccion('d24')">
+                    <img class="imgdisco" src="Recursos/Luis_Miguel.jpg" alt="">
+                    <div class="info">
+                        <h2>Luis Miguel - Luis Miguel </h2>
+                        <button onclick="play('luis', 'd24')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/MujerDeFuego.mp3" id="luis"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="seccion4">
+            <h1 id="soundtrack" class="t4">Soundtrack</h1>
+            <hr>
+            <section class="contenedor">
+                <div class="discon" id="d25" onmouseover="expansion('d25')" onmouseout="reduccion('d25')">
+                    <img class="imgdisco" src="Recursos/rocky.jpg" alt="">
+                    <div class="info">
+                        <h2>Rocky - Varios Artistas</h2>
+                        <button onclick="play('rocky', 'd25')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/eye_of_the_tiger.mp3" id="rocky"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d26" onmouseover="expansion('d26')" onmouseout="reduccion('d26')">
+                    <img class="imgdisco" src="Recursos/moana.jpg" alt="">
+                    <div class="info">
+                        <h2>Moana - Varios Artistas</h2>
+                        <button onclick="play('moana', 'd26')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/your_welcome.mp3" id="moana"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d27" onmouseover="expansion('d27')" onmouseout="reduccion('d27')">
+                    <img class="imgdisco" src="Recursos/starwars.jpg" alt="">
+                    <div class="info">
+                        <h2>Star Wars - John Williams</h2>
+                        <button onclick="play('star', 'd27')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/star_wars.mp3" id="star"></audio>
+                        <h3>1200$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d28" onmouseover="expansion('d28')" onmouseout="reduccion('d28')">
+                    <img class="imgdisco" src="Recursos/barbie.jpg" alt="">
+                    <div class="info">
+                        <h2>Barbie soundtrack - Varios Artistas</h2>
+                        <button onclick="play('barbie', 'd28')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/barbie.mp3" id="barbie"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d29" onmouseover="expansion('d29')" onmouseout="reduccion('d29')">
+                    <img class="imgdisco" src="Recursos/deadpool.jpg" alt="">
+                    <div class="info">
+                        <h2>Deadpool & Wolverine - Varios artistas</h2>
+                        <button onclick="play('deadpool', 'd29')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/bye_bye_bye.mp3" id="deadpool"></audio>
+                        <h3>900$</h3>
+                    </div>
+                </div>
+
+
+                <div class="discon" id="d30" onmouseover="expansion('d30')" onmouseout="reduccion('d30')">
+                    <img class="imgdisco" src="Recursos/forrest.jpg" alt="">
+                    <div class="info">
+                        <h2>Forrest Gump - Varios Artistas</h2>
+                        <button onclick="play('forest', 'd30')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/forrest.mp3" id="forest"></audio>
+                        <h3>960$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d31" onmouseover="expansion('d31')" onmouseout="reduccion('d31')">
+                    <img class="imgdisco" src="Recursos/spiderman.jpg" alt="">
+                    <div class="info">
+                        <h2>Spiderman:Across The Spider-Verse</h2>
+                        <button onclick="play('spider', 'd31')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/am_i_dreaming.mp3" id="spider"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+
+                <div class="discon" id="d32" onmouseover="expansion('d32')" onmouseout="reduccion('d32')">
+                    <img class="imgdisco" src="Recursos/rdr2.jpg" alt="">
+                    <div class="info">
+                        <h2>Red Dead Redemption 2 </h2>
+                        <button onclick="play('rdr2', 'd32')"  class="play"><i class="fa fa-music" aria-hidden="true"></i></button>
+                        <audio src="Recursos/Musica/american_venom.mp3" id="rdr2"></audio>
+                        <h3>1000$</h3>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <section class="seccion1f">
+            <h2 class="correo">
+                vinylstore@gmail.com
+                </h2>
+                <h2 class="numero">
+                656 123 4562
+                </h2>
+                <section class="redes_sociales">
+                    <div id="facebook">
+                        <a href="">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div id="instagram">
+                        <a href="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div id="twitter">
+                        <a href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </section>
+        </section>
+        <hr>
+        <section class="seccion2f">
+            <br>
+            <a href="#"><h2>Politicas de Privacidad</h2></a>
+            <br>
+            <a href=""><h2>Copyright</h2></a>
+        </section>
+    </footer>
+    </main>
+</body>
+<script src="Java/java.js"></script>
+</html>
